@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Box</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="redBox"></div>
+
+    <script>
+        var redBox = document.getElementById("redBox");
+        var imageUrl = "https://scontent.fceb8-1.fna.fbcdn.net/v/t1.15752-9/431708494_1215029296126903_5347225931109052003_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHc8bIccsG9hyWjcyVfGt5ihZxNtD3iMQmFnE20PeIxCUDckDADdzhv_pXiI7eJUtzZSG8xwWr_ZOcBm9EXaV0N&_nc_ohc=fd9Hd6llsTUAX-jQ7-K&_nc_ht=scontent.fceb8-1.fna&oh=03_AdQICor8wNIfQL6NaxM2uzrhizWysR2oXmBnTJSQfYLUlA&oe=662538A1"; // Replace this with your image URL
+
+        redBox.style.backgroundImage = "url('" + imageUrl + "')";
+
+        redBox.addEventListener("click", function() {
+            window.location.href = "https://www.pornhub.com"; // Replace this with your desired link
+        });
+    </script>
+</body>
+</html>
